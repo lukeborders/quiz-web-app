@@ -16,6 +16,26 @@ display: none;
 #answer2 {
 display: none;
 }
-#question1 {
+#q1 {
 display: none;
 }
+#q2 {
+display: none;
+}
+#q3 {
+display: none;
+}
+#correct {
+font-size: 45px;
+color: green;
+display: none;
+}
+#fail {
+font-size: 45px;
+color: red;
+display: none;
+}
+#button3{
+display: none;
+}
+
