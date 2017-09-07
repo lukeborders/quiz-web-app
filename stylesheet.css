@@ -38,4 +38,73 @@ display: none;
 #button3{
 display: none;
 }
-
+#answer1-2{
+	display: none;
+}
+#answer1-3 {
+	display: none;
+}
+#answer2-2 {
+	display: none;
+}
+#answer2-3 {
+	display: none;
+}
+#button31 {
+	display: none;
+}
+#button32{
+	display: none;
+}
+#button4{
+	display: none;
+}
+.winner p{
+	display: none;
+}
+#winner {
+	font-size: 42px;
+	color: #00FF15;
+}
+#winner2 {
+	font-size:32px;
+	color: #00FF15;
+}
+#go back{
+	font-size: 32px;
+	color: #00FF15;
+}
+#goback:hover{
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+#button21 {
+	display: none;
+}
+#button22{
+	display: none;
+}
+#fail-img{
+	display: none;
+}
+#win-img{
+	display: none;
+}
+#q1a1{
+	display: none;
+}
+#q1a2{
+	display: none;
+}
+#q2a1{
+	display: none;
+}
+#q2a2{
+	display: none;
+}
+#q3a1{
+	display: none;
+}
+#q3a2{
+	display: none;
+}
