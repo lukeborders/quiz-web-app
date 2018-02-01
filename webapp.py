@@ -14,7 +14,7 @@ app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.
 
 @app.route('/')
 def renderMain():
-    return render_template('index.html')
+    return render_template('quizwebapp.html')
   
-  if __name__=="__main__":
+if __name__=="__main__":
     app.run(debug=False)
