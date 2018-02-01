@@ -17,4 +17,7 @@ def renderMain():
     return render_template('quizwebapp.html')
   
 if __name__=="__main__":
+<<<<<<< HEAD
     app.run(debug=False)
+
+>>>>>>> faa7454fdd73953c391a3bb924cd81c22230950d
