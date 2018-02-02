@@ -143,6 +143,8 @@ function button3q2() {
 	$("#q2a2").hide();
 	$("#q3a1").show();
 	$("#q3a2").show();
+	$("#label1").hide();
+	$("#label2").hide();
 	$("#label3").hide();
 	$("#label4").hide();
 	$("#label5").show();
