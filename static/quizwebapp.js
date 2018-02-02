@@ -9,6 +9,8 @@ $("input").click(function(){
     $("#q1").show();
 	$("#q1a1").show();
 	$("#q1a2").show();
+	$("#label1").show();
+	$("#label2").show();
 });
 	//calls function question1Answer1
     $("#answer1").click(function(){
@@ -16,46 +18,46 @@ $("input").click(function(){
 });
 	//calls function question1Answer2
  	$("#answer2").click(function(){
- 	question1Answer2(); 
+ 		question1Answer2(); 
 });
 	//calls function button3q1
  	$("#button3").click(function(){
- 	button3q1();
+ 		button3q1();
 });
 	//calls function question2answer2
  	$("#answer2-2").click(function(){
-	question2answer2();
+		question2answer2();
 });
 	// calls function question2answer1
 	$("#answer1-2").click(function(){
-	question2answer1();
+		question2answer1();
 });
 	//calls button3q2
 	$("#button31").click(function(){
-	button3q2();
+		button3q2();
 });
 	// calls question3answer1
 	$("#answer1-3").click(function(){
-	question3Answer1();
+		question3Answer1();
 });
 	// calls finish
 	$("#button4").click(function(){
-	finish();
+		finish();
 });
 	$("#goback").click(function(){
-	goback();
+		goback();
 });
 	$("#button2").click(function(){
-	gobackq1();
+		gobackq1();
 });
 	$("#button21").click(function(){
-	gobackq2();	
+		gobackq2();	
 });
 	$("#button22").click(function(){
-	gobackq3();
+		gobackq3();
 });
 	$("#answer2-3").click(function(){
-	question3answer2();
+		question3answer2();
 });
 });
 // hides question2; shoes correct id; shows button3
@@ -75,6 +77,8 @@ function question2answer2(){
 	$("#q2a1").hide();
 	$("#q2a2").hide();
 	
+
+	
 }
 // shows fail id; hides question2;hides answers1-2 and 2-2
 function question2answer1(){
@@ -93,6 +97,8 @@ function question2answer1(){
 	$("#q1a2").hide();
 	$("#q2a1").hide();
 	$("#q2a2").hide();
+	$("#label3").hide();
+	$("#label4").hide();
 }
 // hides correct id; hides question1; shows question2; hides button3; shows answers1-2 and 2-2; hides answers 2 and 1
 function button3q1() {
@@ -110,6 +116,10 @@ function button3q1() {
 	$("#q1a2").hide();
 	$("#q2a1").show();
 	$("#q2a2").show();
+	$("#label1").hide();
+	$("#label2").hide();
+	$("#label3").show();
+	$("#label4").show();
 }
 // hides correct id; hides question2, shows question3, hides question1, hides answer1, hides answer2, hides answer 1-2,2-2and button31; shows answer1-3 //and 2-3
 function button3q2() {
@@ -133,6 +143,10 @@ function button3q2() {
 	$("#q2a2").hide();
 	$("#q3a1").show();
 	$("#q3a2").show();
+	$("#label3").hide();
+	$("#label4").hide();
+	$("#label5").show();
+	$("#label6").show();
 	}	
 // hides question1;shows fail id;hides answers 1 and 2; hides button2
 function question1Answer2() {
@@ -143,6 +157,7 @@ function question1Answer2() {
 	$("#fail-img").show();
 	$("#q1a1").hide();
 	$("#q1a2").hide();
+	$("#label1","#label2").hide();
  	}
 //hides question1;shows correct id;shows button3;hides answers2 and 1
 function question1Answer1() {
@@ -154,6 +169,7 @@ function question1Answer1() {
 	$("#button2").hide();
 	$("#q1a1").hide();
 	$("#q1a2").hide();
+	$("#label1","#label2").hide();
 	}
 // hides answer 1, 2 , 1-2, 2-2, 1-3, and 2-3, hides button2 and shows button 32, hides question1 and hides question3, shows correct
 function question3Answer1(){
@@ -177,6 +193,7 @@ function question3Answer1(){
 	$("#q2a2").hide();
 	$("#q3a1").hide();
 	$("#q3a2").hide();
+	$("#label5","#label6").hide();
 	
 }
 function question3answer2(){
@@ -198,6 +215,8 @@ function question3answer2(){
 	$("#q3a2").hide();
 	$("#fail").show();
 	$("#fail-img").show();
+	$("#label5","#label6").hide();
+
 }
 function finish(){
 	$("#answer1-3").hide();
@@ -217,6 +236,8 @@ function finish(){
 	$("#win-img").show();
 	$("#q1a1").hide();
 	$("#q1a2").hide();
+	$("#label5","#label6").hide();
+
 }
 function goback(){
 	$("#winner1").hide();
@@ -239,6 +260,8 @@ function goback(){
 	$(".winner p").hide();
 	$("#fail-img").hide();
 	$("#win-img").hide();
+	$("#label1","#label2","#label3","#label4","#label5","#label6").hide();
+
 }
 function gobackq1(){
 	$(".quiz-text").show();
@@ -252,6 +275,7 @@ function gobackq1(){
 	$("#fail-img").hide();
 	$("#q1a1").hide();
 	$("#q1a2").hide();
+	$("#label1","label2").hide();
 }
 function gobackq2(){
 	$(".quiz-text").show();
@@ -271,6 +295,7 @@ function gobackq2(){
 	$("#q1a2").hide();
 	$("#q2a1").hide();
 	$("#q2a2").hide();
+	$("#label3","#label4").hide();
 }
 function gobackq3(){
 	$(".quiz-text").show();
@@ -295,5 +320,6 @@ function gobackq3(){
 	$("#q3a2").hide();
 	$("#q1a1").hide();
 	$("#q1a2").hide();
+	$("#label5","#label6").hide();
 }
 
